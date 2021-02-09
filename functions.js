@@ -33,28 +33,14 @@ function addText() {
 
 function createOnlyAspas(line, newTextValue, newText) {
     const hasVirgulaLastPosition = line.substring(line.length - 1).trim() === ",";
-    // const hasAspasLastPosition = line.substring(line.length - 1).trim() === '"' || line.substring(line.length - 1).trim() === "'";
-    // const hasAspasfirstPosition = line.substring(0, 1).trim() === "'" || line.substring(0, 1).trim() === '"';
 
     if (hasVirgulaLastPosition) {
-        // let sepair = line.split(",")
-        // if (sepair[1] !== "") {
-        //     newTextValue = ""
-        //     newText = ``;
-        //     sepair.map((text, index) => {
-        //         if((sepair.length - 1) !== index){
-        //             newTextValue = newTextValue.concat(`"${sepair[index].trim()}", \n`)
-        //         }
-        //     })
-        //     newText = newTextValue
-        // } else {
-            newTextValue = line.substring(0, line.length - 1);
-            newText = `"${newTextValue}",\n`;
-        // }
+        newTextValue = line.substring(0, line.length - 1);
+        newText = `"${newTextValue}",\n`;
     } else {
         newText = `"${line}"\n`;
     }
-    return newText.trim();
+    return newText;
 }
 
 
