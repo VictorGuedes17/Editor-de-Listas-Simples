@@ -12,10 +12,17 @@
     <div class="header">
         <span class="header-text">Formatar Listas</span>
         <div class="header-access">
-            <span>
-                Acessos : 
-            </span>
-            <img src="http://contador.kinghost.com.br/contador.cgi?ft=4|df=SEUDOMINIO">
+            <span id="time"></span>
+            <script>
+                const hour = new Date().getHours();
+                const minute = new Date().getMinutes();
+                const second = new Date().getSeconds();
+                const currentTime = `${hour}:${minute}:${second}`;
+
+                const span = document.getElementById("time");
+                span.innerHTML = currentTime;
+
+            </script>
         </div>
     </div>
 </head>
