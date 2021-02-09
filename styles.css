@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+}
+
+body {
+    background-color: rgb(176,196,222,0.4);
+}
+
+.header{
+    background-color: rgba(43, 39, 39, 0.959);
+    height: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+}
+
+.header .header-text{
+    margin-left: 1em;
+    font-size: 1.5em;
+}
+
+.header .header-access{
+    display: flex;
+    align-items: center;
+    margin-right: 2em;
+}
+
+.container {
+    height: 100%;
+    margin:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-area-container{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+
+button {
+   width: 95px;
+   height: 40px;
+   border-radius: 12px;
+   border: none;
+   text-decoration: none;
+   background-color: rgb(247, 241, 241);
+   outline:none;
+}
+
+button:hover{
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(21, 22, 21, 0.918)
+}
+
+button:active{
+    background-color: rgba(21, 22, 21, 0.795)
+}
+
+.container-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* .text-area-container .addBtn{
+   width: 80px;
+   height: 40px;
+   margin-top: 100px;
+   margin-left: 48px;
+}
+
+.text-area-container .removeBtn{
+    width: 80px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 48px;
+ } */
+
+.text-area-container .buttons {
+    display: inline;
+    width: 150px;
+    justify-content: center;
+}
+
+.text-area-container .buttons .checkbox-container {
+   display: flex;
+   height: 30px;
+   margin-top: 15px;
+   margin-left: 0.2em;
+   align-items: center;
+}
+
+.text-area-container .buttons .checkbox-container input {
+    margin-right: 0.4em;
+ }
+
+ .text-area-container .buttons .checkbox-container label {
+    color: black;
+    font-size: 1.1em;
+ }
+
+.text-space {
+    background-color: rgba(255, 255, 255, 0.671);
+    width: 550px;
+    height: 400px;
+    font-size: 1.5em;
+}
+
+::placeholder{
+    font-size: 1.3em !important; 
+    color: black !important;
+}
+
+.buttons .checkBtns{
+    height: 30%;
+}
+
+.buttons .pressBtns{
+    height: 70%;
+}
