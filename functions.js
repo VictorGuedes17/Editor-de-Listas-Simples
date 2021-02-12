@@ -10,7 +10,10 @@ function addText() {
 
     let newValue = "";
 
-    allLines.map((line, index) => {
+    const breakAllLines = lineBreak(allLines);
+    console.log(breakAllLines)
+    breakAllLines.map((line, index) => {
+       
         let newText = "";
         let newTextValue = "";
         if (validChecboxAspas && validChecboxVirgula) {
@@ -29,6 +32,23 @@ function addText() {
 
     secondTextArea.value = String(newValue);
 
+}
+
+function lineBreak(allLines) {
+    let newArr = [];
+    if (allLines[0].split(",")[1] !== "") {
+        allLines.map((line, index) => {
+            line.split(",").map((row, key) => {
+                if(row !== ""){
+                    newArr.push(`${row},`)
+                }
+             })
+        })
+    } else {
+        newArr = allLines;
+    }
+
+   return newArr;
 }
 
 function createOnlyAspas(line, newTextValue, newText) {
