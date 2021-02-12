@@ -11,7 +11,7 @@ function addText() {
     let newValue = "";
 
     const breakAllLines = lineBreak(allLines);
-    console.log(breakAllLines)
+
     breakAllLines.map((line, index) => {
        
         let newText = "";
